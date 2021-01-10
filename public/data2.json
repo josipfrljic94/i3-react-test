@@ -1,0 +1,110 @@
+{
+    "About": [
+      {
+        "id": 1,
+        "title": "Covid-19",
+        "img":"vacine.svg",
+        "text":"when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,  remaining essentially unchanged."
+    },
+    {
+        "id": 2,
+        "title": "Happy foot",
+        "img":"dog.svg",
+        "text":" a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,  remaining essentially unchanged."
+    },
+    {
+        "id": 3,
+        "title": "Cildhood",
+        "img":"kid.svg",
+        "text":"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    },
+    {
+        "id": 4,
+        "title": " Health&Sport",
+        "img":"ball.svg",
+        "text":"Healthy when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,  remaining essentially unchanged."
+    }
+],
+"Jumbotron":[
+    {
+        "id": 1,
+        "title":"Healthy and Clean",
+        "subtitle":"Eco clean is only real clean",
+        "darktheme":true,
+        "imgtitle": "Aboutheader",
+        "img":"https://images.pexels.com/photos/4021256/pexels-photo-4021256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+],
+"TextImg":[
+    {
+        "id": 1,
+        "title":"Free cruelty #CrueltyFree",
+        "paragraph1":"dummy text ever  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.",
+        "paragraph2":"dummy text ever  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.",
+        "darktheme":false,
+        "imgtitle": "RabbitLogo",
+        "img":"https://images.ctfassets.net/oggad6svuzkv/31xAvy6pNljGA0mptkL4W4/378f0fd156d23cad8694d5ddfbe56d43/Be_cruelty_free.jpg"
+    }
+],
+
+    "Services": [
+      {
+        "id": 1,
+        "title": "Happy clearness",
+        "img":"https://images.ctfassets.net/oggad6svuzkv/5tdVPSjLgM3E8kJt5PR1Ia/18c1e5d90544c80611f764884c7698ae/image_17.png",
+        "rounded":false,
+        "themedark":"true"
+    },
+      {
+        "id": 2,
+        "title": "Eco water",
+        "img":"https://images.ctfassets.net/oggad6svuzkv/3hLCEWnYKCAagT6tZ061mj/698425838ab6fca5397d2d1a9712d735/image_14.png",
+        "rounded":false,
+        "themedark":"true"
+        },
+      {
+        "id": 3,
+        "title": "Deritization",
+        "img":"https://images.pexels.com/photos/4098778/pexels-photo-4098778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+    },
+      {
+        "id": 4,
+        "title": "High technology",
+        "img":"https://images.pexels.com/photos/3845806/pexels-photo-3845806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+    },
+      {
+        "id": 5,
+        "title": "Healthy hands",
+        "img":"https://images.pexels.com/photos/4031819/pexels-photo-4031819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+        
+    },
+      {
+        "id": 6,
+        "title": "Home sweet",
+        "img":"https://images.pexels.com/photos/4021256/pexels-photo-4021256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+    },
+      {
+        "id": 7,
+        "title": "Right way ",
+        "img":"https://images.pexels.com/photos/38325/vacuum-cleaner-carpet-cleaner-housework-housekeeping-38325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+    },
+      {
+        "id": 8,
+        "title": "Cleaning day",
+        "img":"https://images.pexels.com/photos/4108712/pexels-photo-4108712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "rounded":false,
+        "themedark":"true"
+      }
+
+    ]
+}
