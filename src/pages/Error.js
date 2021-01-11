@@ -1,9 +1,9 @@
 import React from 'react'
-
-const Error = () => {
+import Jumbotron from '../Components/Jumbotron'
+const Error = ({jumbotron3}) => {
     return (
         <div>
-           Error 
+            <Jumbotron data={jumbotron3} />
         </div>
     )
 }

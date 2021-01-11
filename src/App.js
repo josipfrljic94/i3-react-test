@@ -20,8 +20,9 @@ function App() {
   const [jumbotron2, setJumbotron2] = useState([]);
   const [ti2, setTI2] = useState([]);
   const [services2, setServices2] = useState([]);
+  const [jumbotron3, setJumbotron3] = useState([])
 
-  const urls=['data.json','data2.json'];
+  const urls=['data.json','data2.json','data3.json'];
 
   function checkStatus(response) {
     if (response.ok) {
@@ -54,6 +55,7 @@ const getData=()=>{
         setJumbotron2(data[1].Jumbotron)
         setTI2(data[1].TextImg)
         setServices2(data[1].Services);
+        setJumbotron3(data[2].Jumbotron)
     })
   }
 useEffect(()=>{
@@ -69,7 +71,7 @@ useEffect(()=>{
       <Switch>
         <Route exact path="/"><Home data={data} jumbotron1={jumbotron1} /></Route>
             <Route exact path="/about"><About icons={icons} jumbotron2={jumbotron2} services={services2} ti2={ti2}/></Route>
-        <Route ><Error/></Route>
+        <Route ><Error jumbotron3={jumbotron3}/></Route>
       </Switch>
     </div>
   );

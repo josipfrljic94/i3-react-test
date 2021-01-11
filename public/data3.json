@@ -1,0 +1,12 @@
+{
+    "Jumbotron":[
+    {
+        "id": 1,
+        "title":"Err",
+        "subtitle":"E",
+        "darktheme":false,
+        "imgtitle": "derimg",
+        "img":"https://images.pexels.com/photos/3747132/pexels-photo-3747132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+]
+}

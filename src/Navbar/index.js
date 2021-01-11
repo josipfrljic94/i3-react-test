@@ -11,16 +11,18 @@ const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false)
   let navbarUl=useRef(null);
+
   const navturn=()=>{
+    setNavbar(!navbar);
     if( window.innerWidth < 768 ){
      
-      setNavbar(!navbar);
+      
       navbar ?
       TweenMax.to(navbarUl,0.6,{opacity:0,ease:Power3.easeOut}) 
   :
       TweenMax.to(navbarUl,0.6,{opacity:1,ease:Power3.easeOut})
     }else{
-      setNavbar(true)
+      setNavbar(false)
     }
   
 }
@@ -32,7 +34,7 @@ const Navbar = () => {
   }else{
     TweenMax.to(navbarUl,0.6,{opacity:1,ease:Power3.easeOut})
   }
-   
+   setNavbar(false)
 
    
   }, [window.innerWidth])
@@ -40,13 +42,13 @@ const Navbar = () => {
   
     return (
         <div className="navbar">
-            <MobileIcon title={"2020 Annual Report"} navturn={navturn} navbar={navbar}/> 
+            <MobileIcon title={"2020 Annual Report"} navturn={navturn} navbar={navbar} onScroll={()=>setNavbar(false)}/> 
            <ul ref={el=>navbarUl=el} className={navbar ? "navbar-ul active" : "navbar-ul"}>
             <NavItem title={"2020 Annual Report"} link={"/about"}/>
             <NavItem title={"Financial highlights "} link={"/"}/>
             <LogoItem img={logo} link={"/"}/>
             <Dropdown title={"Letter to Shareowners"} dlist={dlist}/>
-            <NavItem title={"2020 Annual Report"} link={"/about"}/>    
+            <NavItem title={"Download"} link={"/about"}/>    
             </ul>  
       </div>
     )
