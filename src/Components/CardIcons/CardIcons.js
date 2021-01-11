@@ -7,7 +7,7 @@ const CardIcons = ({icons}) => {
               
                 <IconsRow>
                 {icons.map(icon=>{
-                    return( <IconItem>
+                    return( <IconItem key={icon.id}>
                         <Icon src={`../../img/${icon.img}`}></Icon>
                         <IconTitle>{icon.title}</IconTitle>
                         <IconText>{icon.text}</IconText>

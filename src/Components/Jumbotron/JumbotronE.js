@@ -7,6 +7,7 @@ height:80vh;
 position:relative;
 padding:0;
 margin:0;
+overflow:hidden;
 display:grid;
 align-content:center;
 justify-content:center;

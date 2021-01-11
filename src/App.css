@@ -2,6 +2,7 @@
 :root {
   --first-color: #0d0d44;
   --light-color: #fafafa;
+  --third-color: #0b0b38;
 }
 .wave{
   position: absolute;
@@ -59,40 +60,31 @@ color:white;
  color: var(--light-color);
 position: relative;
 
+
  }
  
  .dropdown-ul.active{
-   display: flex;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    animation-name: dropdown;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-    
+ 
+    z-index: 3;
+    opacity: 3;
+   
  }
 
  
  .dropdown-ul{
    
-  min-width: 200px;
   
-   min-height: 50px; 
    padding: 0 10px;
-   z-index:15;
     position: absolute;
-    top:50px;
+
     color: var(--light-color);
     background: var(--first-color);
     border-bottom: 1px solid var(--light-color);
-    display: none;
     flex-direction: column;
    align-content: center;
    justify-content: space-around;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  animation-name: dropdownout;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
+  
  }
 
  .dropdown-li{
@@ -101,6 +93,10 @@ position: relative;
    color: var(--light-color);
   padding:8px 0;
    text-decoration: none;
+   display: block;
+ }
+ .dropdown-li.none{
+   display: none;
  }
  .dropdown-arrow{
     position: absolute;
@@ -121,17 +117,6 @@ position: relative;
  }
 
  
-
- @keyframes dropdown {
-  0%   {opacity: 0;}
-  100% { opacity: 1;}
-  
- }
- @keyframes dropdownout {
-  0%   {opacity: 1;}
-  100% { opacity: 0;}
-  
- }
  .mobile-icon{
   display: none;
   padding: 10% 0;
@@ -155,18 +140,16 @@ position: relative;
   }
   .navbar-ul{
     display: none;
-    min-height:40vh;
-    
+    min-height:50vh;
+    padding-bottom: 10%;
   }
   .navbar-ul.active{
     display: block;
     background: var(--first-color);
-    
    padding-top:10%;
   }
   .navbar-li{
     padding: 0px 0;
-    /* margin-bottom: 5px; */
     margin-left: 5%;
   }
   .navbar-div{
@@ -197,7 +180,7 @@ position: relative;
     width: 100%;
     text-align: center;
     position: relative;
-    background: #0c0c42;
+    background:var(--third-color);
     padding: 15px 0;
   }
   

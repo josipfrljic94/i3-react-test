@@ -8,7 +8,7 @@ const DropdownItem = ({title,link}) => {
    
     return (
         <div style={{padding:"5px 0"}}>
-            <Link className="dropdown-li" to={link}>{title} </Link>
+            <Link className= "dropdown-li" to={link}>{title} </Link>
         </div>
     )
 }
