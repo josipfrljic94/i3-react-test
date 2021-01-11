@@ -1,4 +1,4 @@
-import React, { useState,useRef} from 'react'
+import React, { useState,useRef,useEffect} from 'react'
 import DropdownItem from './DropdownItem'
 import { RiArrowDownSLine} from "react-icons/ri";
 import {TweenMax,Power3} from "gsap"; 
@@ -15,6 +15,10 @@ const Dropdown = ({title,dlist}) => {
                 TweenMax.to(dropUl,0.6,{opacity:1,width:200,height:150,top:50,zIndex:6,ease:Power3.easeOut}) 
             
         }
+        useEffect(() => {
+            TweenMax.to(dropUl,0.6,{opacity:0,width:0,height:0,top:-10,ease:Power3.easeOut}) 
+            setdropDown(false);
+        }, [])
                
     
     return (

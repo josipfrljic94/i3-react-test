@@ -17,10 +17,12 @@
   font-family: 'Montserrat', sans-serif;
 }
  .navbar{
-   display: flex;
-   justify-content: center;
-   justify-content: space-around;
-   align-items: center;
+   display: block;
+  
+   
+position: sticky;
+z-index: 3;
+top: 0;
    padding: 0 15%;
    background: var(--first-color);
    
@@ -118,6 +120,7 @@ position: relative;
 
  
  .mobile-icon{
+  
   display: none;
   padding: 10% 0;
   text-decoration: none;
@@ -177,9 +180,13 @@ position: relative;
   .mobile-icon{
   
     display: block; 
+   
+    top: 0;
+    z-index: 15;
     width: 100%;
     text-align: center;
-    position: relative;
+    /* position: relative; */
+    position: sticky;
     background:var(--third-color);
     padding: 15px 0;
   }

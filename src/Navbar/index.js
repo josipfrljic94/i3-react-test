@@ -11,16 +11,18 @@ const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false)
   let navbarUl=useRef(null);
+
   const navturn=()=>{
+    setNavbar(!navbar);
     if( window.innerWidth < 768 ){
      
-      setNavbar(!navbar);
+      
       navbar ?
       TweenMax.to(navbarUl,0.6,{opacity:0,ease:Power3.easeOut}) 
   :
       TweenMax.to(navbarUl,0.6,{opacity:1,ease:Power3.easeOut})
     }else{
-      setNavbar(true)
+      setNavbar(false)
     }
   
 }
@@ -32,7 +34,7 @@ const Navbar = () => {
   }else{
     TweenMax.to(navbarUl,0.6,{opacity:1,ease:Power3.easeOut})
   }
-   
+   setNavbar(false)
 
    
   }, [window.innerWidth])
