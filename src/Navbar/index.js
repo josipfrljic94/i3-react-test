@@ -42,7 +42,7 @@ const Navbar = () => {
   
     return (
         <div className="navbar">
-            <MobileIcon title={"2020 Annual Report"} navturn={navturn} navbar={navbar}/> 
+            <MobileIcon title={"2020 Annual Report"} navturn={navturn} navbar={navbar} onScroll={()=>setNavbar(false)}/> 
            <ul ref={el=>navbarUl=el} className={navbar ? "navbar-ul active" : "navbar-ul"}>
             <NavItem title={"2020 Annual Report"} link={"/about"}/>
             <NavItem title={"Financial highlights "} link={"/"}/>
