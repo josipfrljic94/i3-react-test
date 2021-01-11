@@ -48,7 +48,7 @@ const Navbar = () => {
             <NavItem title={"Financial highlights "} link={"/"}/>
             <LogoItem img={logo} link={"/"}/>
             <Dropdown title={"Letter to Shareowners"} dlist={dlist}/>
-            <NavItem title={"2020 Annual Report"} link={"/about"}/>    
+            <NavItem title={"Download"} link={"/about"}/>    
             </ul>  
       </div>
     )
